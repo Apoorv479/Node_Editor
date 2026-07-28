@@ -1,0 +1,193 @@
+
+/* Base Node */
+
+.base-node {
+
+    position: relative;
+
+    cursor: default;
+
+    min-width: 260px;
+
+    min-height: 130px;
+
+    background: #ffffff;
+
+    border: 1px solid #E5E7EB;
+
+    border-left: 5px solid var(--accent-color);
+    
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.06);
+
+}
+
+/* Hover */
+
+.base-node:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.12);
+
+}
+
+/* Header */
+
+.node-header {
+
+    padding: 12px 16px;
+
+    border-bottom: 1px solid #F3F4F6;
+
+    background: #FAFAFA;
+
+}
+.node-header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+.node-icon {
+
+    font-size: 18px;
+
+}
+.node-title {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #111827;
+
+}
+
+/* Content */
+
+.node-content {
+
+    padding: 16px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+/* Labels */
+
+.node-content label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: #4B5563;
+
+}
+
+/* Inputs */
+
+.node-content input,
+.node-content select,
+.node-content textarea {
+
+    width: 100%;
+
+    padding: 10px 12px;
+
+    font-size: 14px;
+
+    border-radius: 8px;
+
+    border: 1px solid #D1D5DB;
+
+    outline: none;
+
+    transition:
+        border-color .15s ease,
+        box-shadow .15s ease;
+
+    box-sizing: border-box;
+
+    background: white;
+
+}
+
+/* Focus */
+
+.node-content input:focus,
+.node-content select:focus,
+.node-content textarea:focus {
+
+    font-family: inherit;
+
+    border-color: #3B82F6;
+
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,.15);
+
+}
+
+/* Textarea */
+
+.node-content textarea {
+
+    resize: none;
+
+    overflow: hidden;
+
+    min-height: 80px;
+
+}
+
+
+/* ReactFlow Handles */
+
+.react-flow__handle {
+
+    width: 10px;
+
+    height: 10px;
+
+    border: 2px solid white;
+
+    background: #3B82F6;
+
+}
+
+/* Selected Node */
+
+.react-flow__node.selected .base-node {
+
+    border-color: #3B82F6;
+
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,.18);
+
+}
