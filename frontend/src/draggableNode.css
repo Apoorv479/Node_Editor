@@ -1,0 +1,98 @@
+.draggable-node {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px;
+
+    background: white;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 12px;
+
+    cursor: grab;
+
+    user-select: none;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.05);
+
+}
+
+.draggable-node:hover {
+
+    transform: translateY(-2px);
+
+    border-color: #3B82F6;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.draggable-node:active {
+
+    cursor: grabbing;
+
+    transform: scale(.98);
+
+}
+
+.draggable-node-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #EFF6FF;
+
+    font-size: 22px;
+
+    flex-shrink: 0;
+
+}
+
+.draggable-node-content {
+
+    flex: 1;
+
+}
+
+.draggable-node-content h3 {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #111827;
+
+}
+
+.draggable-node-content p {
+
+    margin: 4px 0 0;
+
+    font-size: 12px;
+
+    color: #6B7280;
+
+}

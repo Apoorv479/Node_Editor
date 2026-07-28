@@ -1,0 +1,45 @@
+.submit-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.submit-button{
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 26px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.18s;
+
+}
+
+.submit-button:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+.submit-button:active{
+
+    transform:scale(.98);
+
+}
